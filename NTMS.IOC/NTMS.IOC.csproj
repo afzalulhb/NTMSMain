@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NTMS.BLL\NTMS.BLL.csproj" />
+    <ProjectReference Include="..\NTMS.DAL\NTMS.DAL.csproj" />
+    <ProjectReference Include="..\NTMS.Model\NTMS.Model.csproj" />
+    <ProjectReference Include="..\NTMS.Utility\NTMS.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
