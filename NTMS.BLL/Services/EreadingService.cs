@@ -50,8 +50,7 @@ namespace NTMS.BLL.Services
             try
             {
                 var readingModel = _mapper.Map<Ereading>(model);
-                var reading= await _ereadingRepository.Get(r=>r.Id == model.Id);
-                if (reading==null) throw new TaskCanceledException("reading not found");
+                var reading= await _ereadingRepository.Get(r=>r.Id == model.Id) ?? throw new TaskCanceledException("reading not found");
                 reading.StartDate=readingModel.StartDate;
                 reading.EndDate=readingModel.EndDate;
                 reading.PreviousReading=readingModel.PreviousReading;
