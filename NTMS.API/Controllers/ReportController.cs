@@ -22,7 +22,7 @@ namespace NTMS.API.Controllers
             var rsp = new Response<ReportDTO>();
             try
             {
-                rsp.status = true; 
+                rsp.status = true;
                 rsp.value = await _reportService.GetByTenantIdAndDateRange(tenantId, firstDate, lastDate);
                 //rsp.value = await _reportService.Report(tenantId, firstDate, lastDate);
             }
